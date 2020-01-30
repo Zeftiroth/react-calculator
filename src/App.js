@@ -42,8 +42,8 @@ function App() {
           transform: "translate(-50%, -50%)"
         }}
       >
-        <CalculatorDisplay />
-        <Keypad />
+        <CalculatorDisplay result={result} />
+        <Keypad performCalculation={performCalculation} />
       </div>
     </div>
   );
