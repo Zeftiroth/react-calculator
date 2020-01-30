@@ -4,13 +4,12 @@ import Keys from "../components/Keys";
 
 const KeyPad = ({ performCalculation }) => {
   const keys = useKeys();
-  const { value } = key;
 
   return (
     <div style={{ width: "100%" }}>
       <div style={{ display: "flex", flexDirection: "row", flexWrap: "wrap" }}>
         {keys.map(key => {
-          return <Keys data={key} />;
+          return <Keys performCalculation={performCalculation} data={key} />;
         })}
       </div>
     </div>
